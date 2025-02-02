@@ -1,0 +1,76 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+.search-line {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.dash-stack {
+  display: flex;
+  gap: 50px;
+  margin: 40px 26px;
+}
+.dash-title {
+  font-family: "Oxygen", serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+.dash-title span {
+  color: #1348fc;
+}
+.line-group {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+  max-width: 20px;
+  max-height: 26px;
+}
+.line:first-child {
+  width: 20px;
+}
+.line:nth-child(2) {
+  width: 15px;
+}
+.line:nth-child(3) {
+  width: 20px;
+}
+.line:nth-child(4) {
+  width: 15px;
+}
+.line {
+  background-color: #000;
+  height: 1px;
+}
+.search {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.search-input {
+  display: flex !important;
+  align-items: center !important;
+  width: 240px !important;
+  height: 30px !important;
+  border-radius: 15px !important;
+  border-color: none !important;
+  box-shadow: none !important;
+  background-color: #97979735 !important;
+  padding-left: 35px !important;
+  all: unset;
+}
+.faSearch {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #50b8e4;
+  font-size: 18px;
+}
+
+.search-input::placeholder {
+  font-family: "Oxygen", serif;
+}
