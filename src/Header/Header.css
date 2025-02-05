@@ -1,21 +1,22 @@
 .header-container {
   display: flex;
   justify-content: space-between;
+  margin: 40px 26px;
+  align-items: center;
 }
 .search-line {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 15px;
 }
 .dash-stack {
   display: flex;
   gap: 50px;
-  margin: 40px 26px;
 }
 .dash-title {
   font-family: "Oxygen", serif;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 24px;
 }
 .dash-title span {
   color: #1348fc;
@@ -73,4 +74,47 @@
 
 .search-input::placeholder {
   font-family: "Oxygen", serif;
+}
+.ash-stack-right {
+}
+.profile-admin-photo {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+.setting-icon {
+  width: 25px;
+  height: 25px;
+}
+.dash-stack-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.flag {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+}
+.icon-container {
+  position: relative;
+  display: inline-block;
+  margin: 0 10px;
 }
