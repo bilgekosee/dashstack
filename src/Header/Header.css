@@ -1,7 +1,7 @@
 .header-container {
   display: flex;
   justify-content: space-between;
-  margin: 40px 26px;
+  margin: 20px 26px;
   align-items: center;
 }
 .search-line {
