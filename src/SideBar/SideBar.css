@@ -1,0 +1,118 @@
+.sidebarContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #1f263e;
+  width: 217px;
+  font-family: "Oxygen", serif;
+}
+
+.quicacces-title {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.quicspan {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 1px solid #00000060;
+  padding-left: 30px;
+}
+
+.dashboard {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  font-size: 15px;
+  font-weight: normal;
+  height: 45px;
+  cursor: pointer;
+  transition: background 0.3s ease, border-left 0.3s ease;
+}
+
+.dashboard-icon {
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+.dashboard:hover {
+  background-color: #2a3b5d;
+}
+
+.dashboard.active {
+  background-color: #2a3b5d;
+  font-weight: bold;
+  position: relative;
+}
+
+.dashboard.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 4px;
+  background-color: #50b8e4;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.menu-icon {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.badgeServis {
+  background-color: #e57373;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 3px 10px;
+  border-radius: 12px;
+}
+
+.arrow-icon {
+  margin-left: auto;
+  font-size: 18px;
+  color: #50b8e4;
+  padding-right: 5px;
+}
+
+.submenu {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 45px;
+}
+
+.submenu li {
+  padding: 10px 0;
+  cursor: pointer;
+  color: #c3c6e6;
+}
+
+.submenu li:hover {
+  color: white;
+}
+
+.transactions {
+  color: #ffffff;
+  font-size: 15px;
+}
+.logout {
+  margin-top: 100px;
+}
+.logout-span {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 1px solid #00000060;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
