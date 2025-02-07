@@ -1,0 +1,104 @@
+.dashboard-container {
+  background-color: #f8f9fc;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.welcome-text {
+  font-size: 16px;
+  color: #666;
+}
+
+.bold-text {
+  font-weight: bold;
+  color: #0057ff;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 10px;
+}
+.nav-icons .icon:hover {
+  color: #50b8e4;
+}
+.icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+}
+
+.crypto-cards {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+}
+
+.crypto-card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+}
+
+.crypto-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.crypto-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.crypto-price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.crypto-name {
+  color: #000a12;
+  font-size: 15px;
+  font-weight: lighter;
+}
+.crypto-description {
+  color: #000000;
+  font-size: 11px;
+  font-weight: lighter;
+}
+
+.crypto-change {
+  display: block;
+  font-size: 14px;
+  text-align: right;
+}
+
+.positive {
+  color: green;
+}
+
+.negative {
+  color: red;
+}
+.icon-name {
+  display: flex;
+}
+.coinName {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 10px;
+}
