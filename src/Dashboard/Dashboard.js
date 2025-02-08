@@ -5,6 +5,7 @@ import { IoGridOutline } from "react-icons/io5";
 import { IoChevronBackOutline, IoChevronForwardOutline } from "react-icons/io5";
 import { LineChart, Line, ResponsiveContainer } from "recharts";
 import "./Dashboard.css";
+import TradingChart from "../TradingChart/TradingChart";
 
 const data = [
   {
@@ -110,6 +111,7 @@ const CryptoDashboard = () => {
           </div>
         ))}
       </div>
+      <TradingChart />
     </div>
   );
 };

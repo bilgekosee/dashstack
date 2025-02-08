@@ -1,0 +1,158 @@
+.trading-container {
+  padding: 20px;
+}
+.main-container-trading {
+  padding-top: 40px;
+}
+.trading-market {
+  display: flex;
+  gap: 20px;
+}
+
+.trading-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.trading-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.trading-currency {
+  color: #777;
+}
+
+.buy-button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: #0056b3;
+}
+.charts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trading-details {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.trading-price-trading {
+  font-size: 32px;
+  font-weight: bold;
+}
+.trading-information {
+  display: flex;
+  gap: 20px;
+}
+.trading-change {
+  font-size: 18px;
+}
+
+.negative {
+  color: red;
+}
+
+.positive {
+  color: green;
+}
+
+.crypto-stats {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  color: #555;
+}
+.spanTotal {
+  padding-right: 10px;
+}
+.span-value-name {
+  font-weight: lighter;
+}
+.price-alert {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: lighter;
+}
+
+.time-filters {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.time-filters button {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #eee;
+  transition: background 0.3s ease;
+}
+
+.time-filters button.active,
+.time-filters button:hover {
+  background: #007bff;
+  color: white;
+}
+
+.chart-container {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.market-cap {
+  padding: 15px;
+  border-radius: 10px;
+  width: 270px;
+}
+
+.market-cap h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.market-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+.market-cap ul {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 0 !important;
+}
+
+.market-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: white;
+}
+
+.market-change {
+  font-size: 14px;
+  font-weight: bold;
+}
