@@ -6,7 +6,12 @@
 }
 .trading-market {
   display: flex;
-  gap: 20px;
+  gap: 65px;
+}
+.market-sort {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .trading-header {
@@ -17,6 +22,8 @@
 }
 
 .trading-title {
+  border: none;
+  background-color: #f8f9fc;
   font-size: 20px;
   font-weight: bold;
 }
@@ -26,11 +33,15 @@
 }
 
 .buy-button {
-  background-color: #007bff;
+  background: linear-gradient(0.25turn, #0043ff, #a370f1);
+  width: 70px;
+  display: flex;
+  align-items: center;
+  height: 25px;
   color: white;
-  padding: 8px 16px;
+  padding: 8px 22px;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
   transition: background 0.3s ease;
 }
@@ -51,8 +62,8 @@
 }
 
 .trading-price-trading {
-  font-size: 32px;
-  font-weight: bold;
+  font-size: 24px;
+  font-weight: normal;
 }
 .trading-information {
   display: flex;
@@ -96,18 +107,26 @@
 }
 
 .time-filters button {
+  position: relative;
+  background: none;
   border: none;
-  padding: 8px 12px;
-  border-radius: 5px;
+  font-size: 11px;
+  font-weight: normal;
+  color: #1f263e;
   cursor: pointer;
-  background: #eee;
-  transition: background 0.3s ease;
 }
 
-.time-filters button.active,
-.time-filters button:hover {
-  background: #007bff;
-  color: white;
+.time-filters button.active::after,
+.time-filters button:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 20px;
+  height: 3px;
+  background: linear-gradient(90deg, #0043ff, #7a7eff);
+  border-radius: 3px;
+  transform: translateX(-50%);
 }
 
 .chart-container {
