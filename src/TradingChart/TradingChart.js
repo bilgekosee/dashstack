@@ -1,8 +1,9 @@
 import { React, useState, PureComponent } from "react";
 import { FaBitcoin, FaEthereum } from "react-icons/fa";
-import { SiRipple } from "react-icons/si";
+import { SiRipple, SiFactom, SiLisk, SiNem } from "react-icons/si";
 import { FaCoins } from "react-icons/fa";
 import { IoNotificationsCircleOutline } from "react-icons/io5";
+import { BiSort } from "react-icons/bi";
 import {
   LineChart,
   Line,
@@ -57,6 +58,27 @@ const marketData = [
     change: 0.66,
     icon: <SiRipple />,
     color: "#0057ff",
+  },
+  {
+    name: "FCT",
+    price: 50.839,
+    change: 0.66,
+    icon: <FaCoins />, // Alternatif olarak genel bir ikon kullanıyoruz
+    color: "#2babe4",
+  },
+  {
+    name: "LSK",
+    price: 321.14,
+    change: -0.47,
+    icon: <FaCoins />,
+    color: "#0d4ea0",
+  },
+  {
+    name: "XEM",
+    price: 10.604,
+    change: -1.07,
+    icon: <FaCoins />,
+    color: "#67b2e8",
   },
 ];
 
@@ -238,7 +260,11 @@ const TradingChart = () => {
           </div>
         </div>
         <div className="market-cap">
-          <h3> Market Cap</h3>
+          <div className="market-sort">
+            <h3> Market Cap</h3>
+            <BiSort />
+          </div>
+
           <ul>
             {marketData.map((coin, index) => (
               <li key={index} className="market-item">
