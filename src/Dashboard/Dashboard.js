@@ -6,6 +6,7 @@ import { IoChevronBackOutline, IoChevronForwardOutline } from "react-icons/io5";
 import { LineChart, Line, ResponsiveContainer } from "recharts";
 import "./Dashboard.css";
 import TradingChart from "../TradingChart/TradingChart";
+import InformationDash from "../Information/Information";
 
 const data = [
   {
@@ -112,6 +113,7 @@ const CryptoDashboard = () => {
         ))}
       </div>
       <TradingChart />
+      <InformationDash />
     </div>
   );
 };
