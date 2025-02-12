@@ -5,7 +5,65 @@
   width: 217px;
   font-family: "Oxygen", serif;
 }
+.sidebarContainer.closed {
+  width: 80px;
+}
+.open-close-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 10px;
+  cursor: pointer;
+}
+.sidebarContainer.closed .open-close-icon {
+  padding: 10px 0;
+  text-align: center;
+}
 
+.sidebarContainer.closed .dashboard,
+.sidebarContainer.closed .menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.sidebarContainer.closed .menu-item .menu-icon {
+  padding-right: 0;
+  font-size: 24px;
+}
+
+.sidebarContainer.closed .menu-item .arrow-icon {
+  display: none;
+}
+
+.sidebarContainer.closed .menu-item span {
+  display: none;
+}
+
+.sidebarContainer.closed .dashboard-icon {
+  padding-right: 0;
+  font-size: 24px;
+}
+
+.sidebarContainer.closed .logout .logout-span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+.sidebarContainer.closed .quicspan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
 .quicacces-title {
   color: #ffffff;
   font-size: 20px;
@@ -13,6 +71,9 @@
 }
 
 .quicspan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 15px;
   padding-bottom: 15px;
   border: 1px solid #00000060;
@@ -105,7 +166,7 @@
   font-size: 15px;
 }
 .logout {
-  margin-top: 100px;
+  margin-top: auto;
 }
 .logout-span {
   padding-top: 15px;

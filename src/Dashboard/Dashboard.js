@@ -79,7 +79,7 @@ const CryptoDashboard = () => {
                 >
                   {crypto.icon}
                 </div>
-                <div className="coinName">
+                <div className="coin-name">
                   <span className="crypto-name">{crypto.name}</span>
                   <span className="crypto-description">
                     {crypto.description}

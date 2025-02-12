@@ -75,8 +75,7 @@
 .search-input::placeholder {
   font-family: "Oxygen", serif;
 }
-.ash-stack-right {
-}
+
 .profile-admin-photo {
   border: 1px solid white;
   border-radius: 50%;
@@ -117,4 +116,27 @@
   position: relative;
   display: inline-block;
   margin: 0 10px;
+}
+@media (max-width: 770px) {
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+  }
+  .dash-stack {
+    display: flex;
+    gap: 5px;
+  }
+  .search-input {
+    width: 100px !important;
+  }
+  .search-input::placeholder {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+  }
+  .dash-stack-right {
+    padding-top: 10px;
+  }
 }

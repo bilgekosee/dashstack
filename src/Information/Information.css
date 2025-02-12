@@ -7,7 +7,7 @@
 .information-dashstack-left {
   border: 1px solid #dfe5f9;
   border-radius: 12px;
-  max-width: 560px;
+  max-width: 600px;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -165,4 +165,51 @@
   position: absolute;
   bottom: 12px;
   right: 12px;
+}
+@media (max-width: 1149px) {
+  .information-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .information-dashstack-left {
+    width: 560px;
+  }
+}
+@media (max-width: 800px) {
+  .information-dashstack-left {
+    width: 460px;
+  }
+  .coinName {
+    gap: 6px;
+  }
+}
+@media (max-width: 690px) {
+  .information-dashstack-left {
+    width: 400px;
+  }
+  .coinName {
+    gap: 1px;
+  }
+}
+@media (max-width: 455px) {
+  .information-dashstack-left {
+    width: 350px;
+  }
+  .coinName {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    padding: 20px 0;
+  }
+  .coinName button.active::after,
+  .coinName button:hover::after {
+    bottom: -2px;
+  }
+}
+@media (max-width: 400px) {
+  .information-dashstack-left {
+    width: 300px;
+  }
 }

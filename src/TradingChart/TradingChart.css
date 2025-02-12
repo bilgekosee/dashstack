@@ -6,7 +6,7 @@
 }
 .trading-market {
   display: flex;
-  gap: 65px;
+  gap: 90px;
 }
 .market-sort {
   display: flex;
@@ -174,4 +174,74 @@
 .market-change {
   font-size: 14px;
   font-weight: bold;
+}
+@media (max-width: 1149px) {
+  .trading-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .trading-stats {
+    display: grid;
+    grid-row: 2;
+  }
+  .time-filters button {
+    font-size: 14px;
+  }
+  .trading-market {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+@media (max-width: 1040px) {
+  .trading-market {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .trading-details {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+  }
+  .time-filters {
+    display: flex;
+    justify-content: center;
+  }
+  .market-cap {
+    width: auto;
+  }
+  .market-cap ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: auto;
+    align-items: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .trading-header {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+  .trading-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+  .trading-container {
+    padding: 0;
+  }
+  .chart-container {
+    padding: 0;
+  }
+  .market-cap ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
